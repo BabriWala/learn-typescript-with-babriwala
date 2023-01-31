@@ -1,0 +1,30 @@
+// JavaScript Code
+// This Code will give us an error when it goes to production the error will be reference error that number is not defined 
+
+function getTotal(numbers){
+  number.reduce((acc, items)=>{
+    return acc + items;
+  },0)
+}
+
+getTotal([5,10,2030,58,40])
+
+
+// In Typescript
+// This Code will give us an error before goes to production the error will be reference error that number is not defined 
+// Here we can tell this argumens to that this will be array of number 
+function getTotal(numbers: Array<number>){  // this callecd generics
+function getTotal(numbers: number[]){
+  number.reduce((acc, items)=>{
+    return acc + items;
+  },0)
+}
+
+getTotal([5,10,2030,58,40])
+
+
+
+First we have to compile typescript
+to compile typescript to javascript run this command: tsc name of file that we have to compile it
+
+typescript only for development when we compiled it the code of typecript are all gone and make like a vanilla js code
